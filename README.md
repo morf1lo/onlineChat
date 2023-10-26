@@ -5,7 +5,7 @@
 
 in the project root enter the following commands:
 ```
-git clone https://github.com/morf1lo/onlineChat.git
+git clone [https://github.com/morf1lo/onlineChat.git](https://github.com/morf1lo/online-chat.git)
 npm install express socket.io dotenv
 ```
 then in the project root create a `.env` file and write:
