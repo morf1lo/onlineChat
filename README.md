@@ -3,7 +3,7 @@
 # Installation
 #### You need to install [Node JS](https://nodejs.org/en) and [git](https://git-scm.com/downloads)
 
-#### in the project root enter the following commands:
+in the project root enter the following commands:
 ```
 git clone https://github.com/morf1lo/online-chat.git
 npm install express socket.io dotenv
