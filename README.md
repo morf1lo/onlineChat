@@ -1,7 +1,7 @@
 # Simple Node JS online chat
 
 # Installation
-#### You need to install [Node JS](https://nodejs.org/en)
+#### You need to install [Node JS](https://nodejs.org/en) and [git](https://git-scm.com/downloads)
 
 #### in the project root enter the following commands:
 ```
