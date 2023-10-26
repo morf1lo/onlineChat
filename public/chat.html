@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online chat :3</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <main class="main">
+        <ul class="chat">
+            <!-- Here will messages -->
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <form action="#" class="form">
+                <div class="form-container">
+                    <div class="message">
+                        <div class="message-container">
+                            <input type="text" name="message" id="message" placeholder="Write a message..." maxlength="1069">
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <div class="submit-container">
+                            <input type="submit" id="send" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
