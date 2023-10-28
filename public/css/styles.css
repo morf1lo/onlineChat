@@ -41,17 +41,29 @@ body {
     gap: 15px;
 }
 
+.greeting-message {
+    background: rgba(255, 182, 74, .8) !important;
+}
+
 .chat li:nth-child(odd) {
     background: #313131;
 }
 
-.displayed-username {
+.displayed-name {
     background: #1f1f1f;
+    border-radius: 5px;
+    padding: 4px;
+    color: #f1f1f1;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.displayed-system {
+    background: #f1f1f1;
     border-radius: 5px;
     padding: 4px;
     color: cornflowerblue;
     font-weight: 600;
-    letter-spacing: 0.8px;
 }
 
 .chat li p {
