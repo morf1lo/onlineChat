@@ -49,7 +49,7 @@ body {
     border-radius: 8px;
     color: cyan;
     background: #313131;
-    box-shadow: 0 0 5px 1px inset #101010;
+    box-shadow: 0 0 10px 1px inset #111;
 }
 
 .username-container {
