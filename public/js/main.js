@@ -2,7 +2,6 @@ const socket = io();
 
 const chat = document.querySelector('.chat');
 const form = document.querySelector('.form');
-const nameBlock = document.getElementById('username');
 const input = document.getElementById('message');
 
 const urlParams = new URLSearchParams(window.location.search);
