@@ -7,9 +7,9 @@ in the project root enter the following commands:
 ```
 git clone https://github.com/morf1lo/onlineChat.git
 cd onlineChat
-npm install express socket.io dotenv
+npm i
 ```
-
+###
 then in the project root create a `.env` file and write:
 PORT = `<your port>`
 
