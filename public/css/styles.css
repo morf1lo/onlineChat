@@ -16,7 +16,7 @@
 }
 
 body {
-    background: #333;
+    background: #171728;
 }
 
 ::-webkit-scrollbar {
@@ -31,38 +31,37 @@ body {
 
 .chat li {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
     position: relative;
     padding: 12px;
     font-family: 'Montserrat', monospace;
-    background: #2e2e2e;
-    gap: 15px;
+    font-weight: 500;
+    background: transparent;
+    margin-bottom: 5px;
+    gap: 30px;
 }
 
 .greeting-message {
     background: rgba(163, 110, 35, 0.5) !important;
 }
 
-.chat li:nth-child(odd) {
-    background: #313131;
+.displayed-name,
+.displayed-system {
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
 }
 
 .displayed-name {
-    background: #1f1f1f;
-    border-radius: 5px;
-    padding: 4px;
+    background: #333;
     color: #f1f1f1;
-    font-weight: 700;
     letter-spacing: 1px;
 }
 
 .displayed-system {
     background: #f1f1f1;
-    border-radius: 5px;
-    padding: 4px;
     color: cornflowerblue;
-    font-weight: 600;
 }
 
 .chat li p {
@@ -78,11 +77,11 @@ body {
 .footer {
     position: fixed;
     width: 100%;
-    height: 75px;
+    height: 80px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #444;
+    background: #0d001a;
 }
 
 .footer-container {
@@ -122,16 +121,18 @@ body {
 
 #message {
     width: 100%;
-    height: 40px;
-    background: #333;
+    height: 45px;
+    background: #3e3875;
     color: #f3f3f3;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 2px 20px;
     font-size: 20px;
     font-family: 'Montserrat', monospace;
-    box-shadow: 0 0 5px 1px #555;
+    &::placeholder {
+        color: #999;
+    }
 }
 
 .submit {
@@ -153,13 +154,16 @@ body {
 
 #send {
     cursor: pointer;
-    padding: 15px 30px;
+    padding: 15px 35px;
     outline: none;
-    border: none;
+    border: 3px solid #5e5ecc;
     border-radius: 50px;
-    background: #333;
+    background: #5e5ecc;
     color: #fff;
     font-size: 16px;
     font-family: 'Montserrat', monospace;
-    transition: .15s;
+    transition: .3s;
+    &:hover {
+        background: transparent;
+    }
 }
