@@ -10,7 +10,7 @@ cd onlineChat
 npm i
 ```
 
-## then in the project root create a `.env` file and write:
+then in the project root create a `.env` file and write:
 PORT = `<your port>`
 
 finally, enter the command:
