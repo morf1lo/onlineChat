@@ -55,6 +55,12 @@ body {
     border-radius: 8px;
     color: #f4f4f4;
     background: transparent;
+    transition: .3s;
+}
+
+#room-id:focus,
+#username:focus {
+    border-radius: 50px;
 }
 
 #submit {

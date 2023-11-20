@@ -164,6 +164,11 @@ body {
     font-family: 'Montserrat', monospace;
     transition: .3s;
     &:hover {
+        transition: .4s;
         background: transparent;
+    }
+    &:active {
+        transition: .2s;
+        background: #5e5ecc;
     }
 }

@@ -2,20 +2,18 @@ const express = require('express');
 const { createServer } = require('http');
 const socketIo = require('socket.io');
 const { join } = require('path');
-const routes = require('./routes');
+const router = require('./routes');
 const socketSetup = require('./socket');
 require('dotenv').config();
 
 const app = express();
 const server = createServer(app);
 const io = socketIo(server);
-const { json, urlencoded } = express;
 
-app.use(json());
-app.use(urlencoded({ extended: true }));
-app.use(express.static(join(__dirname, '../public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(join(__dirname, '../client')));
+app.use(router);
 
-routes(app);
 socketSetup(io);
 
 server.listen(process.env.PORT, () => {
