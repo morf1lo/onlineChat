@@ -1,6 +1,8 @@
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 568px) {
     .chat li {
         flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px !important;
     }
 }
 
@@ -166,9 +168,9 @@ body {
     &:hover {
         transition: .4s;
         background: transparent;
-    }
+    };
     &:active {
         transition: .2s;
         background: #5e5ecc;
-    }
+    };
 }
