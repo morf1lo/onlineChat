@@ -9,7 +9,7 @@ git clone https://github.com/morf1lo/onlineChat.git && cd onlineChat && npm i
 ```
 
 then in the project root create a `.env` file and write:
-PORT = `<your port>`
+PORT = `<your free port>`
 
 finally, enter the command:
 ```
