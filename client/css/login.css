@@ -64,6 +64,7 @@ body {
 }
 
 #submit {
+    user-select: none;
     overflow: hidden;
     cursor: pointer;
     position: relative;

@@ -16,7 +16,7 @@ router.post('/login', (req, res) => {
         res.redirect(`/chat?room_id=${roomid}&username=${username}`);
     }
 });
-    
+
 router.get('/chat', (req, res) => {
     const username = req.query.username;
     if (!username) {
