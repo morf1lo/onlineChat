@@ -3,15 +3,15 @@
 # Installation
 #### You need to install [Node JS](https://nodejs.org/en)
 
-in the project root enter the following commands:
+- in the project root enter the following commands:
 ```
 git clone https://github.com/morf1lo/onlineChat.git && cd onlineChat && npm i
 ```
 
-then in the project root create a `.env` file and write:
+- then in the project root create a `.env` file and write:
 PORT = `<your free port>`
 
-finally, enter the command:
+- finally, enter the command:
 ```
 npm start
 ```
