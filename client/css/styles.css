@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
 @media screen and (max-width: 568px) {
     .chat li {
         flex-direction: column;
