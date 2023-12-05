@@ -33,7 +33,7 @@ form.addEventListener('submit', event => {
 
     socket.emit('chat-message', {
         message: message,
-        name: username
+        author: username
     });
 
     input.value = '';
@@ -73,6 +73,7 @@ function appendGreetingMessage(data) {
     const usernameText = document.createElement('span');
     usernameText.classList.add('displayed-system');
     usernameText.innerText = data.system;
+    usernameText.innerText = data.author;
     
     const message = document.createElement('p');
     message.innerHTML = data.message;
