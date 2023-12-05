@@ -5,13 +5,18 @@
 
 - in the project root enter the following commands:
 ```
-git clone https://github.com/morf1lo/onlineChat.git && cd onlineChat && npm i
+git clone https://github.com/morf1lo/onlineChat.git
+cd onlineChat/server
+npm install
 ```
 
-- then in the project root create a `.env` file and write:
-PORT = `<your free port>`
-
-- finally, enter the command:
+- To build:
 ```
-npm start
+npm run build
+```
+then start: `npm start`
+
+- To run dev:
+```
+npm run dev
 ```
