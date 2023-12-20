@@ -31,11 +31,14 @@ body {
     gap: 30px;
 }
 
+.form h1 {
+    margin-bottom: 20px;
+}
+
 .roomid-container,
 .username-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: auto;
     height: auto;
     gap: 5px;
@@ -43,15 +46,13 @@ body {
 
 .roomid-container label,
 .username-container label {
-    font-size: 24px;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
-#room-id,
-#username {
+.form-input {
     font-size: 20px;
-    padding: 0 30px;
-    width: 260px;
-    height: 50px;
+    padding: 15px 40px;
     outline: none;
     border: 2px solid #6900ff;
     border-radius: 8px;
@@ -60,8 +61,7 @@ body {
     transition: .3s;
 }
 
-#room-id:focus,
-#username:focus {
+.form-input:focus {
     border-radius: 50px;
 }
 
@@ -75,7 +75,8 @@ body {
     outline: none;
     border: none;
     border-radius: 50px;
-    padding: 15px 80px;
+    width: 260px;
+    height: 50px;
     font-size: 20px;
     background: #772cc9;
     transition: .2s ease-out;

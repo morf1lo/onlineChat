@@ -19,10 +19,6 @@ btn.addEventListener('mousedown', function (e) {
     }, 801);
 });
 
-input.addEventListener('input', function () {
+input.addEventListener('input', function() {
     this.value = this.value.replace(/\D/g, '');
-
-    if (this.value.length > 16) {
-        this.value = this.value.slice(0, 16);
-    }
 });
