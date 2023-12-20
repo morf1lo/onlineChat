@@ -10,7 +10,7 @@ cd onlineChat/server
 npm install
 ```
 
-- To start:
+- Start:
 ```
 npm run dev
 ```
