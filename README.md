@@ -2,7 +2,7 @@
 
 ## Installation
 ### [Golang](https://go.dev/dl/)
----
+
 ```
 git clone https://github.com/morf1lo/onlineChat.git
 cd onlineChat
