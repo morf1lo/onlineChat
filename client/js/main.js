@@ -1,6 +1,4 @@
-const socket = io("http://localhost:5000/socket.io", () => {
-    console.log('Blablabla');
-});
+const socket = io();
 
 const chat = document.querySelector('.chat');
 const form = document.querySelector('.form');
