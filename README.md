@@ -5,8 +5,7 @@
 ---
 ```
 git clone https://github.com/morf1lo/onlineChat.git
-```
-```
+cd onlineChat
 cd server
 go run main.go
 ```
