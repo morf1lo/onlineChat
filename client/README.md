@@ -1,2 +1,1 @@
-markdown: kramdown
-## Icons from [Icons8](https://icons8.com/icons){:target="_blank"}
+## Icons from [Icons8](https://icons8.com/icons){target="_blank"}
