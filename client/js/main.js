@@ -18,8 +18,7 @@ socket.emit('greeting-message', {
 });
 
 socket.on('greeting-message', data => {
-    const parsedData = JSON.parse(data);
-    appendGreetingMessage(parsedData);
+    appendGreetingMessage(data);
 
     window.scrollTo(0, document.body.scrollHeight);
 });
@@ -43,12 +42,11 @@ form.addEventListener('submit', event => {
 });
 
 socket.on('chat-message', data => {
-    const parsedData = JSON.parse(data);
-    appendMessage(parsedData);
+    appendMessage(data);
 
     saveMessages({
-        message: parsedData.message,
-        author: parsedData.author
+        message: data.message,
+        author: data.author
     });
 
     window.scrollTo(0, document.body.scrollHeight);
