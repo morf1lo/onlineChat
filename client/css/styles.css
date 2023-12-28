@@ -117,62 +117,35 @@ body {
 
 .message-container {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-}
 
-#message {
-    width: 100%;
-    height: 45px;
-    background: #3e3875;
-    color: #f3f3f3;
-    outline: none;
-    border: none;
-    border-radius: 50px;
-    padding: 2px 20px;
-    font-size: 20px;
-    font-family: 'Montserrat', monospace;
-    &::placeholder {
-        color: #999;
+    & #message {
+        width: 100%;
+        height: 45px;
+        background: #3e3875;
+        color: #f3f3f3;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        padding: 2px 100px 2px 20px;
+        font-size: 20px;
+        font-family: 'Montserrat', monospace;
+        &::placeholder {
+            color: #999;
+        }
     }
-}
 
-.submit {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 5%;
-    height: 100%;
-}
-
-.submit-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
-}
-
-#send {
-    cursor: pointer;
-    padding: 15px 35px;
-    outline: none;
-    border: 3px solid #5e5ecc;
-    border-radius: 50px;
-    background: #5e5ecc;
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Montserrat', monospace;
-    transition: .3s;
-    &:hover {
-        transition: .4s;
-        background: transparent;
-    };
-    &:active {
-        transition: .2s;
-        background: #5e5ecc;
-    };
+    & #send {
+        position: absolute;
+        right: 15px;
+        width: 48px;
+        height: 48px;
+        outline: none;
+        border: none;
+        background: url("/public/assets/icons8-send-48.png") no-repeat;
+    }
 }
