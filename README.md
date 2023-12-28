@@ -11,7 +11,11 @@ yarn
 ```
 
 #### To run dev:
-```yarn dev```
+```
+yarn dev
+```
 
 #### To start:
-```yarn start```
+```
+yarn start
+```
