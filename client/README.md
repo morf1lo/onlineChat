@@ -1,1 +1,1 @@
-## Icons from <a href="https://icons8.com/icons" target="_blank">Icons8</a>
+[Icons from Icons8](https://icons8.com/icons){:target="_blank"}
