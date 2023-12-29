@@ -1,8 +1,5 @@
 ## Node.js chat Version
-```diff
-- NOTE:
-This is an old version written in Node.js. A new version available written in Golang
-```
+### <span style="color:purple;">NOTE:</span> This is an old version written in Node.js. A new version available written in Golang
 
 ### Installation
 #### You need [Node.js](https://nodejs.org/en) installed
