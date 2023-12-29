@@ -5,12 +5,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// Login page "/"
 func HandleIndex(c *gin.Context) {
 	c.HTML(200, "login.html", gin.H{})
 }
 
-// Login to the chat controller POST "/login"
+// Login to the chat POST "/login"
 func HandleLogin(c *gin.Context) {
 	roomID := c.PostForm("roomid")
 	username := c.PostForm("username")
@@ -23,7 +22,6 @@ func HandleLogin(c *gin.Context) {
 	c.Redirect(302, fmt.Sprintf("/chat/%s?username=%s", roomID, username))
 }
 
-// Chat page "/chat"
-func HandleChat(c *gin.Context) {
+func HandleChatPage(c *gin.Context) {
 	c.HTML(200, "chat.html", gin.H{})
 }

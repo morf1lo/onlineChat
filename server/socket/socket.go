@@ -2,6 +2,7 @@ package socket
 
 import (
 	"encoding/json"
+	"fmt"
 
 	socketio "github.com/googollee/go-socket.io"
 )
@@ -13,6 +14,8 @@ type ChatMsg struct {
 
 func SocketSetup(server *socketio.Server) {
 	server.On("connection", func(so socketio.Socket) {
+		fmt.Printf("New conn: %s\n", so.Id())
+
 		so.On("join-room", func(roomID string) {
 			so.Join(roomID)
 	
