@@ -1,5 +1,5 @@
 ## Node.js chat Version
-### ❗️ NOTE: This is an old version written in Node.js. A new version available written in Golang
+### ❗️ NOTE: This is an old version written in Node.js. A [new version](https://github.com/morf1lo/onlineChat/tree/master) available written in Golang
 
 ### Installation
 #### You need [Node.js](https://nodejs.org/en) installed
