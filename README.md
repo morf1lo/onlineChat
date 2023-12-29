@@ -1,4 +1,4 @@
-# Golang Online chat
+# Golang Realtime chat
 
 ## Installation
 #### You need [Golang](https://go.dev/dl/) installed
