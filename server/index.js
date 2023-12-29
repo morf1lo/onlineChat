@@ -5,7 +5,7 @@ const { join } = require("path");
 const router = require("./routes");
 const socketSetup = require("./socket");
 
-const PORT = process.env.PORT || 8080;
+const PORT = 5000;
 const app = express();
 const server = createServer(app);
 const io = new Server(server);
