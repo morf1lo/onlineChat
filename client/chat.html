@@ -3,10 +3,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/public/css/styles.css" />
     <title>Online chat :3</title>
+    <script src="/public/js/emojiPicker.js" type="module"></script>
 </head>
 
 <body>
@@ -23,7 +24,8 @@
                 <div class="form-container">
                     <div class="message">
                         <div class="message-container">
-                            <input type="text" id="message" placeholder="Write a message..." maxlength="800" autocomplete="off">
+                            <input id="trigger" type="button" />
+                            <input type="text" id="message" placeholder="Write a message..." maxlength="800" autocomplete="off" />
                             <button type="submit" id="send"></button>
                         </div>
                     </div>

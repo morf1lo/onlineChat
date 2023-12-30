@@ -123,6 +123,17 @@ body {
     width: 100%;
     height: 100%;
 
+    & #trigger {
+        cursor: pointer;
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        left: 15px;
+        outline: none;
+        border: none;
+        background: url("../assets/icons8-emojis-48.png") no-repeat;
+    }
+
     & #message {
         width: 100%;
         height: 45px;
@@ -131,7 +142,7 @@ body {
         outline: none;
         border: none;
         border-radius: 50px;
-        padding: 2px 100px 2px 20px;
+        padding: 2px 100px 2px 80px;
         font-size: 20px;
         font-family: 'Montserrat', monospace;
         &::placeholder {
