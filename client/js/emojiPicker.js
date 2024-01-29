@@ -11,7 +11,7 @@ const picker = createPopup({
   emojiVersion: 14.0,
   emojisPerRow: 9,
   showPreview: false,
-  showVariants: false
+  showVariants: false 
 }, {
   referenceElement: trigger,
   triggerElement: trigger,
