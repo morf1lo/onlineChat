@@ -6,8 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 	socketio "github.com/googollee/go-socket.io"
 
-	"server/socket"
-	"server/routes"
+	"github.com/morf1lo/online-chat/socket"
+	"github.com/morf1lo/online-chat/routes"
 )
 
 func main() {
@@ -17,10 +17,10 @@ func main() {
 
 	router.SetTrustedProxies(nil)
 
-	router.LoadHTMLFiles("../client/login.html", "../client/chat.html")
+	router.LoadHTMLFiles("client/login.html", "client/chat.html")
 
-	router.Static("/public", "../client")
-
+	router.Static("/public", "client")
+	
 	server, err := socketio.NewServer(nil)
 	if err != nil {
 		log.Fatal(err)

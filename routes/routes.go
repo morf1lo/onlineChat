@@ -9,7 +9,6 @@ func HandleIndex(c *gin.Context) {
 	c.HTML(200, "login.html", gin.H{})
 }
 
-// Login to the chat POST "/login"
 func HandleLogin(c *gin.Context) {
 	roomID := c.PostForm("roomid")
 	username := c.PostForm("username")
