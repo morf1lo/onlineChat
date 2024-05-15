@@ -1,15 +1,12 @@
-package routes
+package handler
 
 import (
 	"fmt"
+
 	"github.com/gin-gonic/gin"
 )
 
-func HandleIndex(c *gin.Context) {
-	c.HTML(200, "login.html", gin.H{})
-}
-
-func HandleLogin(c *gin.Context) {
+func (h *Handler) userLogin(c *gin.Context) {
 	roomID := c.PostForm("roomid")
 	username := c.PostForm("username")
 
@@ -19,8 +16,4 @@ func HandleLogin(c *gin.Context) {
 	}
 
 	c.Redirect(302, fmt.Sprintf("/chat/%s?username=%s", roomID, username))
-}
-
-func HandleChatPage(c *gin.Context) {
-	c.HTML(200, "chat.html", gin.H{})
 }

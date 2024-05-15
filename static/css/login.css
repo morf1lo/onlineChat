@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: #171728;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 700px;
+    background: #0d001a;
+    border-radius: 2rem;
+    gap: 30px;
+}
+
+.form h1 {
+    margin-bottom: 20px;
+}
+
+.roomid-container,
+.username-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 5px;
+}
+
+.roomid-container label,
+.username-container label {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.form-input {
+    font-size: 20px;
+    padding: 15px 40px;
+    outline: none;
+    border: 2px solid #6900ff;
+    border-radius: 8px;
+    color: #f4f4f4;
+    background: transparent;
+    transition: .3s;
+}
+
+.form-input:focus {
+    border-radius: 50px;
+}
+
+#submit {
+    user-select: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    top: 60px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    width: 260px;
+    height: 50px;
+    font-size: 20px;
+    background: #772cc9;
+    transition: .2s ease-out;
+    z-index: 1;
+    &:hover {
+        background: #185cec;
+    }
+}
+
+.pulse {
+    position: absolute;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: pulse .8s ease-out;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}

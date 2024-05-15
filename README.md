@@ -14,3 +14,5 @@ go run main.go
 ```
 
 #### Open localhost:5000
+
+##### Icons from [Icons8](https://icons8.com/icons/)

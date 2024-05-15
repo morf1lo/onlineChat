@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+@media screen and (max-width: 568px) {
+    .chat li {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px !important;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form-container {
+        justify-content: space-evenly !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #171728;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.chat {
+    position: relative;
+    list-style: none;
+    padding-bottom: 75px;
+}
+
+.chat li {
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+    padding: 12px;
+    font-family: 'Montserrat', monospace;
+    font-weight: 500;
+    background: transparent;
+    margin-bottom: 5px;
+    gap: 30px;
+}
+
+.greeting-message {
+    background: rgba(163, 110, 35, 0.5) !important;
+}
+
+.displayed-name,
+.displayed-system {
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.displayed-name {
+    background: #333;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+.displayed-system {
+    background: #f1f1f1;
+    color: cornflowerblue;
+}
+
+.chat li p {
+    width: auto;
+    max-width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0d001a;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82%;
+    height: 100%;
+}
+
+.message-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    & #trigger,
+    & #send {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        outline: none;
+        border: none;
+    }
+
+    & #trigger {
+        cursor: pointer;
+        left: 15px;
+        background: url("/static/assets/icons8-emojis-48.png") no-repeat;
+    }
+
+    & #message {
+        width: 100%;
+        height: 45px;
+        background: #3e3875;
+        color: #f3f3f3;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        padding: 2px 100px 2px 80px;
+        font-size: 20px;
+        font-family: 'Montserrat', monospace;
+        &::placeholder {
+            color: #999;
+        }
+    }
+
+    & #send {
+        right: 15px;
+        background: url("/static/assets/icons8-send-48.png") no-repeat;
+    }
+}
