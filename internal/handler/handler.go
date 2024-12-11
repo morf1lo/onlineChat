@@ -23,7 +23,7 @@ func (h *Handler) InitRoutes() (*gin.Engine, error) {
 
 	router.SetTrustedProxies(nil)
 
-	router.Static("/static", "static")
+	router.Static("/static", "./static")
 
 	server, err := socketio.NewServer(nil)
 	if err != nil {

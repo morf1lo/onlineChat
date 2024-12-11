@@ -17,13 +17,13 @@ func Socket(server *socketio.Server) {
 			so.Join(roomID)
 	
 			so.On("greeting-message", func(msg ChatMsg) {
-				encodedMsg, _ := json.Marshal(msg)
-				server.BroadcastTo(roomID, "greeting-message", string(encodedMsg))
+				msgJSON, _ := json.Marshal(msg)
+				server.BroadcastTo(roomID, "greeting-message", string(msgJSON))
 			})
 	
 			so.On("chat-message", func(msg ChatMsg) {
-				encodedMsg, _ := json.Marshal(msg)
-				server.BroadcastTo(roomID, "chat-message", string(encodedMsg))
+				msgJSON, _ := json.Marshal(msg)
+				server.BroadcastTo(roomID, "chat-message", string(msgJSON))
 			})
 		})
 	})

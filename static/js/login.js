@@ -1,7 +1,13 @@
-const btn = document.getElementById('submit');
-const input = document.getElementById('room-id');
+const submitBtn = document.getElementById('submit');
+const roomIdInput = document.getElementById('room-id');
+const usernameInput = document.getElementById('name');
 
-btn.addEventListener('mousedown', function (e) {
+const usernameCache = localStorage.getItem('usernameCache');
+if (usernameCache) {
+    usernameInput.value = usernameCache;
+}
+
+submitBtn.addEventListener('mousedown', function (e) {
     let addDiv 	        = document.createElement('div'),
         maxValue 		= Math.max(this.clientWidth, this.clientHeight),
         rect			= this.getBoundingClientRect(),
@@ -19,6 +25,6 @@ btn.addEventListener('mousedown', function (e) {
     }, 801);
 });
 
-input.addEventListener('input', function() {
+roomIdInput.addEventListener('input', function() {
     this.value = this.value.replace(/\D/g, '');
 });

@@ -4,8 +4,7 @@ const chat = document.querySelector('.chat');
 const form = document.querySelector('.form');
 const input = document.getElementById('message');
 
-const urlParams = new URLSearchParams(window.location.search);
-const username = urlParams.get('username');
+const usernameCache = localStorage.getItem('usernameCache');
 
 const pathParts = window.location.pathname.split('/');
 const roomId = pathParts[pathParts.length - 1];
@@ -13,7 +12,7 @@ const roomId = pathParts[pathParts.length - 1];
 socket.emit('join-room', roomId);
 
 socket.emit('greeting-message', {
-    message: `👋 Hello ${username}! Now you are with us!`,
+    message: `👋 Hello ${usernameCache}! Now you are with us!`,
     author: '🔧 System'
 });
 
@@ -32,7 +31,7 @@ form.addEventListener('submit', event => {
 
     socket.emit('chat-message', {
         message: message,
-        author: username
+        author: usernameCache
     });
 
     input.value = '';
